@@ -135,8 +135,7 @@ def css(bundle, media=False, debug=settings.TEMPLATE_DEBUG):
                 getattr(settings, 'LESS_PREPROCESS', False)):
                 build_css(item, settings.LESS_BIN)
                 items.append('%s.css' % item)
-            elif (item.endswith(('.scss', '.sass')) and
-                  getattr(settings, 'SASS_PREPROCESS', False)):
+            elif (item.endswith(('.scss', '.sass')) and getattr(settings, 'SASS_BIN', False)):
                 build_css(item, settings.SASS_BIN)
                 items.append('%s.css' % item)
             else:

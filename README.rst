@@ -215,8 +215,8 @@ If you want to use less_ or sass_ files and have ``LESS_BIN`` or
   you'll have to figure out how to include it in your project.
 
 * If you want to compile less on the server, even in development, add a
-  setting: ``LESS_PREPROCESS = True`` or ``SASS_PREPROCESS = True``.
-  Your less and sass files will be recompiled on every request.
+  setting: ``LESS_PREPROCESS = True``
+  Your less files will be recompiled on every request.
 
 * In production, less and sass files are automatically compiled before being
   bundled with the rest of the CSS.
